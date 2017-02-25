@@ -14,6 +14,7 @@
 		F91A455B1E61E7E900CBA03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91A45591E61E7E900CBA03F /* LaunchScreen.storyboard */; };
 		F91A45661E61E7E900CBA03F /* Numer0nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45651E61E7E900CBA03F /* Numer0nTests.swift */; };
 		F91A45711E61E7E900CBA03F /* Numer0nUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */; };
+		F91A457F1E61F9A900CBA03F /* Numer0n_card in Resources */ = {isa = PBXBuildFile; fileRef = F91A457E1E61F9A900CBA03F /* Numer0n_card */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F91A456C1E61E7E900CBA03F /* Numer0nUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Numer0nUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numer0nUITests.swift; sourceTree = "<group>"; };
 		F91A45721E61E7E900CBA03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91A457E1E61F9A900CBA03F /* Numer0n_card */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Numer0n_card; path = ../../../../../../Pictures/Numer0n_card; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				F91A45501E61E7E900CBA03F /* AppDelegate.swift */,
 				F91A45521E61E7E900CBA03F /* ViewController.swift */,
 				F91A45541E61E7E900CBA03F /* Main.storyboard */,
+				F91A457E1E61F9A900CBA03F /* Numer0n_card */,
 				F91A45571E61E7E900CBA03F /* Assets.xcassets */,
 				F91A45591E61E7E900CBA03F /* LaunchScreen.storyboard */,
 				F91A455C1E61E7E900CBA03F /* Info.plist */,
@@ -193,7 +196,6 @@
 				TargetAttributes = {
 					F91A454C1E61E7E900CBA03F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ZM8F4YXCTS;
 						ProvisioningStyle = Automatic;
 					};
 					F91A45601E61E7E900CBA03F = {
@@ -237,6 +239,7 @@
 			files = (
 				F91A455B1E61E7E900CBA03F /* LaunchScreen.storyboard in Resources */,
 				F91A45581E61E7E900CBA03F /* Assets.xcassets in Resources */,
+				F91A457F1E61F9A900CBA03F /* Numer0n_card in Resources */,
 				F91A45561E61E7E900CBA03F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZM8F4YXCTS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Numer0n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishikawa.Numer0n;
@@ -428,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ZM8F4YXCTS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Numer0n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishikawa.Numer0n;
@@ -514,6 +517,7 @@
 				F91A45771E61E7E900CBA03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F91A45781E61E7E900CBA03F /* Build configuration list for PBXNativeTarget "Numer0nTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +526,7 @@
 				F91A457A1E61E7E900CBA03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F91A457B1E61E7E900CBA03F /* Build configuration list for PBXNativeTarget "Numer0nUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +535,7 @@
 				F91A457D1E61E7E900CBA03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
