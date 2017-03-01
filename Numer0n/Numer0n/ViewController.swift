@@ -19,6 +19,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.fi
+        p1TextF.delegate = self
+        p2TextF.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,5 +64,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
         bite = bite - eat
         
         return String(eat)+"EAT-"+String(bite)+"BITE"
+    }
+    
+    func textFieldShouldReturn(_ p1TextF: UITextField)->Bool{
+        p1TextF.resignFirstResponder()
+        return true
+    }
+    func textFieldShouldReturn2(_ p2TextF: UITextField)->Bool{
+        p2TextF.resignFirstResponder()
+        return true
     }
 }
