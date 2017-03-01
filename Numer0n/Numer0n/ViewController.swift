@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
+    var p1 = ""
+    var p2 = ""
+    var flag1 = 0
+    var flag2 = 0
+    
     @IBOutlet weak var p1TextF: UITextField!
     @IBOutlet weak var p2TextF: UITextField!
     @IBOutlet weak var p1Send: UIButton!
@@ -19,8 +24,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.fi
+        self.p1TextF.keyboardType = UIKeyboardType.numberPad
+        self.p2TextF.keyboardType = UIKeyboardType.numberPad
         p1TextF.delegate = self
         p2TextF.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,8 +37,76 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func p1SendAction(_ sender: Any) {
+        if flag1 == 0 {
+            p1 = textFieldDidChange1(p1TextF.text!)
+        } else {
+            var inputtex:String = textFieldDidChange1(p1TextF.text!)
+            var tex:String = ""
+            if inputtex != "error input"{
+                tex = Numeron(Pnum: p2,num: inputtex)
+            }else{
+                tex = "error input\n"
+            }
+            self.p1TextView.text.append(tex)
+        }
+        p1TextF.text = ""
     }
+    
     @IBAction func p2SendAction(_ sender: Any) {
+        if flag2 == 0 {
+            p2 = textFieldDidChange2(p2TextF.text!)
+        }else {
+            var inputtex:String = textFieldDidChange2(p2TextF.text!)
+            var tex:String = ""
+            if inputtex != "error input"{
+                tex = Numeron(Pnum: p1,num: inputtex)
+            }else{
+                tex = "error input\n"
+            }
+            self.p2TextView.text.append(tex)
+        }
+        p2TextF.text = ""
+    }
+    
+    func p1TextFShouldReturn(_ textField: UITextField) -> Bool {
+        p1TextF.resignFirstResponder()
+        
+        return true
+    }
+    func p2TextFShouldReturn(_ textField: UITextField) -> Bool {
+        p2TextF.resignFirstResponder()
+        
+        return true
+    }
+//    deinit {
+//        NotificationCenter.default.removeObserver(self)
+//    }
+//    
+    
+    func textFieldDidChange1(_ text:String) -> String {
+        
+        var teX:String = ""
+        
+            if text.characters.count == 3 {
+                flag1 = 1
+                teX = text.substring(to: text.index(text.startIndex, offsetBy: 3))
+            }else {
+                teX = "error input"
+        }
+        return String(teX)
+    }
+    
+    func textFieldDidChange2(_ text:String) -> String {
+        
+        var teX:String = ""
+        
+        if text.characters.count == 3 {
+            flag2 = 1
+            teX = text.substring(to: text.index(text.startIndex, offsetBy: 3))
+        }else {
+            teX = "error input"
+        }
+        return String(teX)
     }
     
     func Numeron(Pnum:String,num:String)->String{
@@ -63,7 +139,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         bite = bite - eat
         
-        return String(eat)+"EAT-"+String(bite)+"BITE"
+        return num+" "+String(eat)+"EAT-"+String(bite)+"BITE\n"
     }
     
     func textFieldShouldReturn(_ p1TextF: UITextField)->Bool{
@@ -75,3 +151,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         return true
     }
 }
+
+
+
+
+
