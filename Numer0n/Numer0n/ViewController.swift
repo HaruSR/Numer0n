@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var p1TextF: UITextField!
     @IBOutlet weak var p2TextF: UITextField!
     @IBOutlet weak var p1Send: UIButton!
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.fi
     }
 
     override func didReceiveMemoryWarning() {
