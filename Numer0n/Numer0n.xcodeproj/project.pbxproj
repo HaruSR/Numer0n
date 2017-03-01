@@ -15,7 +15,6 @@
 		F91A45661E61E7E900CBA03F /* Numer0nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45651E61E7E900CBA03F /* Numer0nTests.swift */; };
 		F91A45711E61E7E900CBA03F /* Numer0nUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */; };
 		F97F82DA1E6219D8000F7B65 /* Numer0n_card in Resources */ = {isa = PBXBuildFile; fileRef = F97F82D91E6219D8000F7B65 /* Numer0n_card */; };
-		F97F82DC1E621A16000F7B65 /* 57dd8d9c 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F97F82DB1E621A16000F7B65 /* 57dd8d9c 2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numer0nUITests.swift; sourceTree = "<group>"; };
 		F91A45721E61E7E900CBA03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97F82D91E6219D8000F7B65 /* Numer0n_card */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Numer0n_card; path = images/Numer0n_card; sourceTree = SOURCE_ROOT; };
-		F97F82DB1E621A16000F7B65 /* 57dd8d9c 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "57dd8d9c 2.jpeg"; path = "../../../../../../Pictures/57dd8d9c 2.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 				F97F82D91E6219D8000F7B65 /* Numer0n_card */,
 				F91A45521E61E7E900CBA03F /* ViewController.swift */,
 				F91A45541E61E7E900CBA03F /* Main.storyboard */,
-				F97F82DB1E621A16000F7B65 /* 57dd8d9c 2.jpeg */,
 				F91A45571E61E7E900CBA03F /* Assets.xcassets */,
 				F91A45591E61E7E900CBA03F /* LaunchScreen.storyboard */,
 				F91A455C1E61E7E900CBA03F /* Info.plist */,
@@ -199,6 +196,7 @@
 				TargetAttributes = {
 					F91A454C1E61E7E900CBA03F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZM8F4YXCTS;
 						ProvisioningStyle = Automatic;
 					};
 					F91A45601E61E7E900CBA03F = {
@@ -241,7 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91A455B1E61E7E900CBA03F /* LaunchScreen.storyboard in Resources */,
-				F97F82DC1E621A16000F7B65 /* 57dd8d9c 2.jpeg in Resources */,
 				F91A45581E61E7E900CBA03F /* Assets.xcassets in Resources */,
 				F97F82DA1E6219D8000F7B65 /* Numer0n_card in Resources */,
 				F91A45561E61E7E900CBA03F /* Main.storyboard in Resources */,
@@ -422,7 +419,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZM8F4YXCTS;
 				INFOPLIST_FILE = Numer0n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishikawa.Numer0n;
@@ -435,7 +433,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZM8F4YXCTS;
 				INFOPLIST_FILE = Numer0n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ishikawa.Numer0n;
