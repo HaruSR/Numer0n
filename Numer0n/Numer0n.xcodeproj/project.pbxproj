@@ -15,6 +15,7 @@
 		F91A45661E61E7E900CBA03F /* Numer0nTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45651E61E7E900CBA03F /* Numer0nTests.swift */; };
 		F91A45711E61E7E900CBA03F /* Numer0nUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */; };
 		F97F82DA1E6219D8000F7B65 /* Numer0n_card in Resources */ = {isa = PBXBuildFile; fileRef = F97F82D91E6219D8000F7B65 /* Numer0n_card */; };
+		F9F0DC2A1E672FFE00CA2C6E /* ダウンロード.png in Resources */ = {isa = PBXBuildFile; fileRef = F9F0DC291E672FFE00CA2C6E /* ダウンロード.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F91A45701E61E7E900CBA03F /* Numer0nUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numer0nUITests.swift; sourceTree = "<group>"; };
 		F91A45721E61E7E900CBA03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97F82D91E6219D8000F7B65 /* Numer0n_card */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Numer0n_card; path = images/Numer0n_card; sourceTree = SOURCE_ROOT; };
+		F9F0DC291E672FFE00CA2C6E /* ダウンロード.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ダウンロード.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F97F82D91E6219D8000F7B65 /* Numer0n_card */,
 				F91A45521E61E7E900CBA03F /* ViewController.swift */,
 				F91A45541E61E7E900CBA03F /* Main.storyboard */,
+				F9F0DC291E672FFE00CA2C6E /* ダウンロード.png */,
 				F91A45571E61E7E900CBA03F /* Assets.xcassets */,
 				F91A45591E61E7E900CBA03F /* LaunchScreen.storyboard */,
 				F91A455C1E61E7E900CBA03F /* Info.plist */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91A455B1E61E7E900CBA03F /* LaunchScreen.storyboard in Resources */,
+				F9F0DC2A1E672FFE00CA2C6E /* ダウンロード.png in Resources */,
 				F91A45581E61E7E900CBA03F /* Assets.xcassets in Resources */,
 				F97F82DA1E6219D8000F7B65 /* Numer0n_card in Resources */,
 				F91A45561E61E7E900CBA03F /* Main.storyboard in Resources */,
