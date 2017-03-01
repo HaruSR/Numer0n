@@ -31,4 +31,36 @@ class ViewController: UIViewController {
     @IBAction func p2SendAction(_ sender: Any) {
     }
     
+    func Numeron(Pnum:String,num:String)->String{
+        var bite:Int = 0
+        var eat:Int = 0
+        
+        let num1:String = num.substring(to: num.index(after: num.startIndex))
+        let num2:String = num.substring(with: num.index(num.startIndex, offsetBy: 1)..<num.index(num.endIndex, offsetBy: -1))
+        let num3:String = num.substring(from: num.index(before: num.endIndex))
+    
+        if Pnum.contains(num1){
+            bite+=1
+        }
+        if Pnum.contains(num2){
+            bite+=1
+        }
+        if Pnum.contains(num3){
+            bite+=1
+        }
+        
+        if Pnum.hasPrefix(num1){
+            eat+=1
+        }
+        if Pnum.substring(with: Pnum.index(num.startIndex, offsetBy: 1)..<num.index(num.endIndex,offsetBy:-1)).hasPrefix(num2){
+            eat+=1
+        }
+        if Pnum.hasSuffix(num3){
+            eat+=1
+        }
+        
+        bite = bite - eat
+        
+        return String(eat)+"EAT-"+String(bite)+"BITE"
+    }
 }
